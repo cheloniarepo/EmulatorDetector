@@ -199,6 +199,8 @@ public class EmulatorDetector {
         for(ResolveInfo resolveInfo : availableActivities){
             if (resolveInfo.activityInfo.packageName.startsWith("com.bluestacks.")) {
                 return true;
+            }else if (resolveInfo.activityInfo.packageName.startsWith("com.bignox.")) {
+                return true;
             }
         }
         List<ApplicationInfo> packages = packageManager
